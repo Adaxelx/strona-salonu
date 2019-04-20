@@ -16,15 +16,15 @@
         transition: .5s
         transform-origin: center
     & .mid
-            transition: 0s
             top: 10px
+            transform: scaleX(1)
     & .bot
             top: 20px
     &.active .top
         transform: rotate(45deg)
         top: 10px
     &.active .mid
-        opacity: 0
+        transform: scaleX(0)
     &.active .bot
         transform: rotate(-45deg)
         top: 10px
