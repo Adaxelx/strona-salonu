@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBtn from './btnNav.js'
-
+import OpenedNav from './openedNav.js'
 class NavM extends React.Component {
     state = {
         active: false,
@@ -12,9 +12,12 @@ class NavM extends React.Component {
         })
     }
 
-    render() {
+    render(){
         return (
-            <NavBtn active={this.state.active} handleClick={this.handleClick}/>
+            <>
+                <OpenedNav active={this.state.active}/>
+                <NavBtn active={this.state.active} handleClick={this.handleClick}/>
+            </>
          );
     }
 }
