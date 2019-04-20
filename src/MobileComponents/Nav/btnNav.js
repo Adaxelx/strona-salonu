@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from '../../Styles/NavBtn.module.sass';
+import styles from '../../Styles/MainStyle.sass';
 
 const btNav = (props) => {
     return (
-        <button className={styles.btn}>
-            <span></span>
-            <span></span>
-            <span></span>
+        <button onClick={props.handleClick} className={props.active ? 'btn active' : 'btn'}>
+            <span className='top bar'></span>
+            <span className='mid bar'></span>
+            <span className='bot bar'></span>
         </button>
      );
 }
