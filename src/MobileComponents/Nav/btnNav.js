@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../Styles/MainStyle.sass';
+import '../../Styles/MainStyle.sass';
 
 const btNav = (props) => {
     return (
