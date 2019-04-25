@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/MainStyle.sass'
-import img from '../images/salon2.jpg'
+import img from '../images/salon.png'
 const Home = () => {
     return (
         <>
