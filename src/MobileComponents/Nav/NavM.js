@@ -15,7 +15,7 @@ class NavM extends React.Component {
     render(){
         return (
             <>
-                <OpenedNav active={this.state.active}/>
+                <OpenedNav active={this.state.active} handleClick={this.handleClick}/>
                 <NavBtn active={this.state.active} handleClick={this.handleClick}/>
             </>
          );
