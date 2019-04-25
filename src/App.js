@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import NavM from './MobileComponents/Nav/NavM.js'
 import Logo from './MobileComponents/Logo.js'
-import Home from './MobileComponents/HomeM.js'
+import Start from './MobileComponents/StartPage.js'
 import {Switch,BrowserRouter as Router,Route,Redirect} from 'react-router-dom'
 
 // class App extends Component {
@@ -40,7 +40,7 @@ class App extends React.Component{
     return (
        <Router>
         <Route render={({ location }) => (
-          <div className='bgc'>
+          <div>
             <Route exact path="/" render={() => (
               <Redirect to="/start"/>
             )}/>
@@ -53,8 +53,8 @@ class App extends React.Component{
                   timeout={1500}
                 >
             <Switch location={location}>
-                <Route exact path="/start" exact component={Home} />
-                <Route exact path="/offer" exact component={Home} />
+                <Route exact path="/start" exact component={Start} />
+                <Route exact path="/offer" exact component={Start} />
             </Switch>
             </CSSTransition>
         </TransitionGroup>
