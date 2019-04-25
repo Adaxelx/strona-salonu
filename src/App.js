@@ -40,7 +40,7 @@ class App extends React.Component{
     return (
        <Router>
         <Route render={({ location }) => (
-          <div>
+          <div className='bgc'>
             <Route exact path="/" render={() => (
               <Redirect to="/start"/>
             )}/>
@@ -50,11 +50,11 @@ class App extends React.Component{
                 <CSSTransition
                   key={location.key}
                   classNames="fade"
-                  timeout={1000}
+                  timeout={1500}
                 >
             <Switch location={location}>
                 <Route exact path="/start" exact component={Home} />
-                <Route exact path="/oferta" exact component={Home} />
+                <Route exact path="/offer" exact component={Home} />
             </Switch>
             </CSSTransition>
         </TransitionGroup>
