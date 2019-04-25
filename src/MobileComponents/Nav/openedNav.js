@@ -7,7 +7,7 @@ const openedNav = (props) => {
         <nav className={props.active ? 'active' : ''}>
             <section className='navList'>
                 <NavLink onClick={props.handleClick} to='/start' ><span>Start</span><span>00</span></NavLink>
-                <NavLink onClick={props.handleClick} to='/offer'><span>Oferta</span><span>01</span></NavLink>
+                <NavLink onClick={props.handleClick} to='/offer'><span>O mnie</span><span>01</span></NavLink>
                 <NavLink><span>Umów się!</span><span>02</span></NavLink>
             </section>
         </nav>
