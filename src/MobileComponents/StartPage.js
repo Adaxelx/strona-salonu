@@ -7,12 +7,16 @@ import '../Styles/MainStyle.sass'
 class StartPage extends React.Component {
     state = {  }
 
+    scrollTop = () =>{
+        window.scrollTo(0,0)
+    }
+
     componentDidMount(){
-        console.log(window.scrollY)
+        setTimeout(this.scrollTop,600);
     }
 
     componentWillUnmount(){
-        console.log(window.scrollY)
+
     }
 
     render() {

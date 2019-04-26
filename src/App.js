@@ -36,9 +36,10 @@ import {Switch,BrowserRouter as Router,Route} from 'react-router-dom'
 
 
 class App extends React.Component{
+
   render() {
     return (
-      <section className='container'>
+      // <section className='container'>
         <Router>
         {/* <Logo/> */}
         <NavM/>
@@ -51,7 +52,7 @@ class App extends React.Component{
                 <CSSTransition
                   key={location.key}
                   classNames="fade"
-                  timeout={1100}
+                  timeout={1500}
                 >
             <Switch location={location}>
                 <Route path="/" exact component={Start} />
@@ -62,7 +63,7 @@ class App extends React.Component{
           </div>
         )}/>
       </Router>
-     </section>
+    //  </section>
      );
 }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Styles/MainStyle.sass'
-const refs = []
 class Offer extends React.Component{
 
 
@@ -13,28 +12,12 @@ class Offer extends React.Component{
             this.title.current.classList.remove('active')
         }
 
-        refs.forEach(ref => {
-            if (scrollY > ref.current.offsetTop + ref.current.offsetHeight * 2 - window.innerHeight) {
-                ref.current.classList.add('active')
-            }
-            else{
-            ref.current.classList.remove('active')
-            }
-        })
-
-    }
-
-    createRefs = () =>{
-        for(let i=0;i<4;i++){
-            refs[i] = React.createRef();
-        }
     }
 
     title = React.createRef();
 
     componentDidMount(){
-        this.createRefs();
-        // this.handleScroll();
+        this.handleScroll();
         window.addEventListener('scroll',this.handleScroll)
     }
      componentWillUnmount(){
@@ -48,13 +31,38 @@ class Offer extends React.Component{
             <section className='priceList'>
                 <div className='service'>
                     <h2>Usługa</h2>
-                    <p ref={refs[0]}>Zabieg odmładzania włosów TRI JUVEN + step 3</p>
-                    <p ref={refs[1]}>Zabieg odmładzania włosów TRI JUVEN + step 3</p>
+                    <p>Strzyżenie męskie</p>
+                    <p>Strzyżenie damskie</p>
+                    <p>Strzyżenie grzywki</p>
+                    <p>Strzyżenie Split-Ender</p>
+                    <p>Modelowanie</p>
+                    <p>Koloryzacja</p>
+                    <p>Koloryzacja + strzyżenie</p>
+                    <p>Koloryzacja + strzyżenie + modelowanie</p>
+                    <p>Zabieg odmładziania włosów TRI JUVEN + step 3</p>
+                    <p>Zabieg TURBO nawilżania</p>
+                    <p>Zabieg POPCORN</p>
+                    <p>Prostowanie pielęgnacyjne</p>
+                    <p>Baleyage</p>
+                    <p>Baleyage + strzyżenie</p>
+                    <p>Dekoloryzacja</p>
+                    <p>Dekoloryzacja + koloryzacja</p>
+                    <p>Pasemka</p>
+                    <p>Pasemka + strzyżenie</p>
+                    <p>Pasemka + strzyżenie + modelowanie</p>
+                    <p>Sombre/Ombre</p>
+                    <p>Sombre/Ombre + strzyżenie</p>
+                    <p>Refleksy</p>
+                    <p>Refleksy + farba</p>
+                    <p>Refleksy + farba + strzyżenie</p>
+                    <p>Upięcie okolicznościowe</p>
+                    <p>Upięcie ślubne</p>
+                    <p>Upięcie próbne</p>
                 </div>
                 <div className='price'>
                     <h2>Cena</h2>
-                    <p ref={refs[2]}>120-300zł</p>
-                    <p ref={refs[3]}>120-300zł</p>
+                    <p>120-300zł</p>
+                    <p>120-300zł</p>
                 </div>
             </section>
         </main>

@@ -15,6 +15,10 @@
 @import './StartStyles/_offer.sass'
 @import './StartStyles/_startPage.sass'
 
+html
+  position: relative
+  overflow-x: hidden
+
 .fade-enter
   transform: translateX(-40%)
   opacity: 0
@@ -24,7 +28,7 @@
 .fade-enter.fade-enter-active
   transform: translateX(0)
   opacity: 1
-  transition: .5s .5s linear
+  transition: .5s .7s linear
 
 
 .fade-exit
