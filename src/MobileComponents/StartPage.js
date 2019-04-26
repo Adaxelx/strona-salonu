@@ -3,6 +3,7 @@ import Home from './HomeM.js'
 import Offer from './Offer.js'
 
 import '../Styles/MainStyle.sass'
+import Partnership from './Partnership.js';
 
 class StartPage extends React.Component {
     state = {  }
@@ -24,6 +25,7 @@ class StartPage extends React.Component {
             <section className='startPage'>
                 <Home/>
                 <Offer/>
+                <Partnership/>
             </section>
          );
     }
