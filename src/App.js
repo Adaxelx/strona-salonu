@@ -40,7 +40,7 @@ class App extends React.Component{
     return (
       <section className='container'>
         <Router>
-        <Logo/>
+        {/* <Logo/> */}
         <NavM/>
         <Route render={({ location }) => (
           <div>
@@ -51,7 +51,7 @@ class App extends React.Component{
                 <CSSTransition
                   key={location.key}
                   classNames="fade"
-                  timeout={1500}
+                  timeout={1100}
                 >
             <Switch location={location}>
                 <Route path="/" exact component={Start} />

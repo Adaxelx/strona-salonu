@@ -12,3 +12,28 @@
     .title.active
         opacity: 1
         transform: translateY(0)
+    & .priceList
+        margin-top: 5vh
+        width: 95%
+        display: flex
+        & .service
+            width: 75%
+            display: grid
+            grid-template-columns: 100%
+            grid-template-rows: repeat(10,30px)
+        & .price
+            flex-grow: 1
+            text-align: center
+            display: grid
+            grid-template-columns: 100%
+            grid-template-rows: repeat(10,30px)
+        & h2
+            font-size: 2rem
+        & p
+            font-size: 1.2rem
+            transform: translateY(200%)
+            opacity: 0
+            transition: .5s
+            &.active
+                opacity: 1
+                transform: translateY(0)
