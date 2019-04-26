@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Strona-salonu/precache-manifest.01d2b616d83dd24985e6b0894cb8ac5f.js"
+  "/strona-salonu/precache-manifest.e9891402334de9b9fdaa4a2e5151218d.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Strona-salonu/index.html", {
+workbox.routing.registerNavigationRoute("/strona-salonu/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

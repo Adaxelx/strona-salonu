@@ -1,13 +1,15 @@
 {
-  "main.css": "/Strona-salonu/static/css/main.ca4a08ff.chunk.css",
-  "main.js": "/Strona-salonu/static/js/main.a1628322.chunk.js",
-  "main.js.map": "/Strona-salonu/static/js/main.a1628322.chunk.js.map",
-  "runtime~main.js": "/Strona-salonu/static/js/runtime~main.bd05b77a.js",
-  "runtime~main.js.map": "/Strona-salonu/static/js/runtime~main.bd05b77a.js.map",
-  "static/js/2.e703e8cc.chunk.js": "/Strona-salonu/static/js/2.e703e8cc.chunk.js",
-  "static/js/2.e703e8cc.chunk.js.map": "/Strona-salonu/static/js/2.e703e8cc.chunk.js.map",
-  "index.html": "/Strona-salonu/index.html",
-  "precache-manifest.01d2b616d83dd24985e6b0894cb8ac5f.js": "/Strona-salonu/precache-manifest.01d2b616d83dd24985e6b0894cb8ac5f.js",
-  "service-worker.js": "/Strona-salonu/service-worker.js",
-  "static/css/main.ca4a08ff.chunk.css.map": "/Strona-salonu/static/css/main.ca4a08ff.chunk.css.map"
+  "main.css": "/strona-salonu/static/css/main.df489a67.chunk.css",
+  "main.js": "/strona-salonu/static/js/main.c8e91d0f.chunk.js",
+  "main.js.map": "/strona-salonu/static/js/main.c8e91d0f.chunk.js.map",
+  "runtime~main.js": "/strona-salonu/static/js/runtime~main.a5c54488.js",
+  "runtime~main.js.map": "/strona-salonu/static/js/runtime~main.a5c54488.js.map",
+  "static/js/2.95f1a9eb.chunk.js": "/strona-salonu/static/js/2.95f1a9eb.chunk.js",
+  "static/js/2.95f1a9eb.chunk.js.map": "/strona-salonu/static/js/2.95f1a9eb.chunk.js.map",
+  "index.html": "/strona-salonu/index.html",
+  "precache-manifest.e9891402334de9b9fdaa4a2e5151218d.js": "/strona-salonu/precache-manifest.e9891402334de9b9fdaa4a2e5151218d.js",
+  "service-worker.js": "/strona-salonu/service-worker.js",
+  "static/css/main.df489a67.chunk.css.map": "/strona-salonu/static/css/main.df489a67.chunk.css.map",
+  "static/media/logo-salon.png": "/strona-salonu/static/media/logo-salon.fc2f6d2d.png",
+  "static/media/salon.png": "/strona-salonu/static/media/salon.6db37e50.png"
 }
