@@ -6,6 +6,15 @@ import '../Styles/MainStyle.sass'
 
 class StartPage extends React.Component {
     state = {  }
+
+    componentDidMount(){
+        console.log(window.scrollY)
+    }
+
+    componentWillUnmount(){
+        console.log(window.scrollY)
+    }
+
     render() {
         return (
             <section className='startPage'>

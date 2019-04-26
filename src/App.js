@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import NavM from './MobileComponents/Nav/NavM.js'
 import Logo from './MobileComponents/Logo.js'
 import Start from './MobileComponents/StartPage.js'
-import {Switch,BrowserRouter as Router,Route,Redirect} from 'react-router-dom'
+import {Switch,BrowserRouter as Router,Route} from 'react-router-dom'
 
 // class App extends Component {
 //   render() {
@@ -38,14 +38,15 @@ import {Switch,BrowserRouter as Router,Route,Redirect} from 'react-router-dom'
 class App extends React.Component{
   render() {
     return (
-       <Router>
+      <section className='container'>
+        <Router>
+        <Logo/>
+        <NavM/>
         <Route render={({ location }) => (
           <div>
-            <Route exact path="/" render={() => (
+            {/* <Route exact path="/" render={() => (
               <Redirect to="/start"/>
-            )}/>
-          <Logo/>
-          <NavM/>
+            )}/> */}
                 <TransitionGroup>
                 <CSSTransition
                   key={location.key}
@@ -53,16 +54,15 @@ class App extends React.Component{
                   timeout={1500}
                 >
             <Switch location={location}>
-                <Route exact path="/start" exact component={Start} />
-                <Route exact path="/offer" exact component={Start} />
+                <Route path="/" exact component={Start} />
+                <Route path="/offer" exact component={Start} />
             </Switch>
             </CSSTransition>
-        </TransitionGroup>
-
-
+            </TransitionGroup>
           </div>
         )}/>
       </Router>
+     </section>
      );
 }
 }
