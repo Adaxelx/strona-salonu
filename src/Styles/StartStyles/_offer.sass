@@ -3,9 +3,10 @@
     display: flex
     flex-direction: column
     align-items: center
+    // margin-top: 5vh
     .title
         font-size: 3rem
-        transform: translateX(-50%)
+        transform: translateX(50%)
         opacity: 0
         transition: 1s
     .title.active
@@ -22,6 +23,7 @@
             grid-template-rows: repeat(28,30px)
             & p:nth-of-type(odd)
                 background-color: lightgray
+                padding-left: 5px
         & .price
             flex-grow: 1
             text-align: center
