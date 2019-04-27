@@ -39,7 +39,7 @@ class App extends React.Component{
 
   render() {
     return (
-      // <section className='container'>
+      <section className='container'>
         <Router>
         {/* <Logo/> */}
         <NavM/>

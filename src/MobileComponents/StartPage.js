@@ -16,10 +16,6 @@ class StartPage extends React.Component {
         setTimeout(this.scrollTop,600);
     }
 
-    componentWillUnmount(){
-
-    }
-
     render() {
         return (
             <section className='startPage'>
