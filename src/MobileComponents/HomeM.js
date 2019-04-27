@@ -5,11 +5,9 @@ import img from '../images/salon.png'
 
 const Home = () => {
     return (
-        <>
-            <section className='home'>
-                <img src={img} alt=""/>
-            </section>
-        </>
+        <section className='home'>
+            <img src={img} alt=""/>
+        </section>
      );
 }
 

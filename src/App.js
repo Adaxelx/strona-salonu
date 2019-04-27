@@ -42,9 +42,9 @@ class App extends React.Component{
       <section className='container'>
         <Router>
         {/* <Logo/> */}
-        <NavM/>
+         <NavM/>
         <Route render={({ location }) => (
-          <div>
+          <>
             {/* <Route exact path="/" render={() => (
               <Redirect to="/start"/>
             )}/> */}
@@ -60,10 +60,10 @@ class App extends React.Component{
             </Switch>
             </CSSTransition>
             </TransitionGroup>
-          </div>
+          </>
         )}/>
       </Router>
-    //  </section>
+   </section>
      );
 }
 }

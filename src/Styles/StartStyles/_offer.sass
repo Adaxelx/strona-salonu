@@ -5,7 +5,7 @@
     align-items: center
     .title
         font-size: 3rem
-        transform: translateX(100%)
+        transform: translateX(-50%)
         opacity: 0
         transition: 1s
     .title.active
@@ -19,7 +19,9 @@
             width: 75%
             display: grid
             grid-template-columns: 100%
-            grid-template-rows: repeat(27,30px)
+            grid-template-rows: repeat(28,30px)
+            & p:nth-of-type(odd)
+                background-color: lightgray
         & .price
             flex-grow: 1
             text-align: center
@@ -28,6 +30,8 @@
             grid-template-rows: repeat(10,30px)
             & p
                 justify-content: center
+                &:nth-of-type(odd)
+                    background-color: lightgray
         & h2
             font-size: 2rem
         & p

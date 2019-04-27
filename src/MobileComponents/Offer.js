@@ -17,7 +17,7 @@ class Offer extends React.Component{
     title = React.createRef();
 
     componentDidMount(){
-        this.handleScroll();
+        // this.handleScroll();
         window.addEventListener('scroll',this.handleScroll)
     }
      componentWillUnmount(){
