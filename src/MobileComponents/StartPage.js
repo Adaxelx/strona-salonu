@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './HomeM.js'
 import Offer from './Offer.js'
-
+import Footer from './Footer.js'
 import '../Styles/MainStyle.sass'
 import Partnership from './Partnership.js';
 
@@ -22,6 +22,7 @@ class StartPage extends React.Component {
                 <Home/>
                 <Offer/>
                 <Partnership/>
+                <Footer/>
             </section>
          );
     }

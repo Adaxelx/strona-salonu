@@ -3,6 +3,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import NavM from './MobileComponents/Nav/NavM.js'
 import Logo from './MobileComponents/Logo.js'
 import Start from './MobileComponents/StartPage.js'
+
 import {Switch,BrowserRouter as Router,Route} from 'react-router-dom'
 
 // class App extends Component {
@@ -39,8 +40,8 @@ class App extends React.Component{
 
   render() {
     return (
-      <section className='container'>
-        <Router>
+      // <section className='container'>
+        <Router basename={process.env.PUBLIC_URL}>
         {/* <Logo/> */}
          <NavM/>
         <Route render={({ location }) => (
@@ -60,10 +61,12 @@ class App extends React.Component{
             </Switch>
             </CSSTransition>
             </TransitionGroup>
+
           </>
         )}/>
       </Router>
-   </section>
+
+  //  </section>
      );
 }
 }
