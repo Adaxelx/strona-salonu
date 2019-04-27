@@ -1,0 +1,22 @@
+.partnership
+    height: 50vh
+    width: 100%
+    margin-top: 5vh
+    +flexAlignCenter()
+    & h2
+        font-size: 2rem
+        width: 95%
+        font-weight: lighter
+    & span
+        font-weight: bold
+    & img
+        width: 95%
+        transform: translateX(50%)
+        opacity: 0
+        transition: .5s
+        &.active
+            opacity: 1
+            transform: translateX(0)
+    & p
+        font-size: 1.5rem
+        width: 95%
