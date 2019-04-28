@@ -1,14 +1,27 @@
 footer
     background-color: lightgray
-    height: 80vh
+    height: 150vh
     width: 100%
     margin-top: $space-components
     +flexColumnAround()
     & section
         width: $width-section
         & .title
+            text-transform: uppercase
             font-size: $font-sizeTitle
-            text-align: center
         & .content
             margin-top: $space-content
             font-size: $font-sizeContent
+        &.place iframe
+            width: 100%
+            height: 50vh
+        &.hours ul
+            height: 100%
+            +flexColumnAround()
+            align-items: flex-start
+            list-style-type: none
+            & li
+                font-size: $font-sizeContent
+                & span
+                    font-size: $font-sizeMedium
+
