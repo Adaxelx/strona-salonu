@@ -44,7 +44,7 @@ class App extends React.Component{
         <Router basename={process.env.PUBLIC_URL}>
         {/* <Logo/> */}
          <NavM/>
-        <Route render={({ location }) => (
+          <Route render={({ location }) => (
           <>
             {/* <Route exact path="/" render={() => (
               <Redirect to="/start"/>
@@ -61,7 +61,6 @@ class App extends React.Component{
             </Switch>
             </CSSTransition>
             </TransitionGroup>
-
           </>
         )}/>
       </Router>
