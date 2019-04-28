@@ -5,9 +5,11 @@ import '../Styles/MainStyle.sass'
 const Footer = () => {
     return (
         <footer>
+            <aside className='media'><i className="fab fa-instagram"></i></aside>
+            <aside className='media'><i className="fab fa-facebook-f"></i></aside>
             <section className='visit'>
                 <h3 className='title'><span className='firstLetter'>U</span>mów wizytę</h3>
-                <p className='content'>Jeśli Twoje włosy wymagają szczególnej opieki, są zniszczone słońcem lub nieudanym zabiegiem kosmetycznym, jeśli wybierasz się na uroczystość, która wymaga pieknej stylizacji lub po prostu chcesz odświeżyć fryzurę - zadzwoń do nas! Postaramy się umówić wizytę w najbardziej dogodnym terminie.</p>
+                <p className='content'>Jeśli Twoje włosy wymagają szczególnej opieki, są zniszczone słońcem lub nieudanym zabiegiem kosmetycznym, jeśli wybierasz się na uroczystość, która wymaga pieknej stylizacji lub po prostu chcesz odświeżyć fryzurę - zadzwoń do nas! Postaramy się umówić wizytę w najbardziej dogodnym terminie. Aby umówić wizytę <a href="/start">Kliknij tutaj!</a></p>
             </section>
             <section className='hours'>
                 <h3 className='title'><span className='firstLetter'>G</span>odziny otwarcia</h3>

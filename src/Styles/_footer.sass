@@ -1,14 +1,21 @@
 footer
     background-color: lightgray
-    height: 150vh
+    position: relative
+    height: 110vh
     width: 100%
     margin-top: $space-components
     +flexColumnAround()
+    justify-content: flex-start
     & section
         width: $width-section
+        margin-top: $space-components
+        &.visit a
+            font-size: $font-sizeMedium
+            color:  #5f88c1
+            text-decoration: none
         & .title
             text-transform: uppercase
-            font-size: $font-sizeTitle
+            font-size: $font-sizeSubtitle
         & .content
             margin-top: $space-content
             font-size: $font-sizeContent
@@ -22,6 +29,21 @@ footer
             list-style-type: none
             & li
                 font-size: $font-sizeContent
+                &:nth-of-type(3), &:nth-of-type(7)
+                    color: red
                 & span
                     font-size: $font-sizeMedium
-
+    & aside
+        position: absolute
+        width: 50px
+        height: 50px
+        top: 0
+        right: 0px
+        border: 1px solid black
+        border-radius: 5px
+        font-size: $font-sizeTitle
+        text-align: center
+        line-height: 50px
+        &:nth-of-type(2)
+            border-right: none
+            right: 50px
