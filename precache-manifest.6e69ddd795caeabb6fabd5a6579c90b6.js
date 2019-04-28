@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/strona-salonu/static/js/runtime~main.a5c54488.js"
   },
   {
-    "revision": "81c85f3a7a7b2da8c968",
-    "url": "/strona-salonu/static/js/main.dddd5886.chunk.js"
+    "revision": "978ac7a46cd8609eabab",
+    "url": "/strona-salonu/static/js/main.5b5bf277.chunk.js"
   },
   {
-    "revision": "4fcc351a92503c820fa0",
-    "url": "/strona-salonu/static/js/2.0a5d4fc0.chunk.js"
+    "revision": "2c1cf91713901b6ad956",
+    "url": "/strona-salonu/static/js/2.7e142b11.chunk.js"
   },
   {
-    "revision": "81c85f3a7a7b2da8c968",
+    "revision": "978ac7a46cd8609eabab",
     "url": "/strona-salonu/static/css/main.8fe3219c.chunk.css"
   },
   {
-    "revision": "16c1a0486b43194eaf4ce4882346ccf7",
+    "revision": "6467aff20eee63aa395fb4493c645ab6",
     "url": "/strona-salonu/index.html"
   }
 ];
