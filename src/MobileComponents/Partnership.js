@@ -32,7 +32,7 @@ class Partnership extends React.Component {
     render() {
         return (
             <section className='partnership'>
-                <h2>Pracujemy na najlepszej jakości kosmetykach marki <span>Glynt</span></h2>
+                <h2>Pracujemy na najlepszej jakości kosmetykach marki <span><span className='firstLetter'>G</span>lynt</span></h2>
                 <img ref={this.item} src={logo} alt=""/>
                 <p>Kosmetyki firmy <span>Glynt</span> są w 100% oparte na wegańskich składnikach!</p>
             </section>

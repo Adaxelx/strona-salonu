@@ -27,7 +27,7 @@ class Offer extends React.Component{
     render(){
         return (
         <main className='offer'>
-            <h1 ref={this.title} className='title'>Nasza oferta</h1>
+            <h1 ref={this.title} className='title'><span className='firstLetter'>N</span>asza oferta</h1>
             <section className='priceList'>
                 <div className='service'>
                     <h2>Usługa</h2>
