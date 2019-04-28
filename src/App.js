@@ -1,7 +1,7 @@
 import React from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import NavM from './MobileComponents/Nav/NavM.js'
-import Logo from './MobileComponents/Logo.js'
+// import Logo from './MobileComponents/Logo.js'
 import Start from './MobileComponents/StartPage.js'
 
 import {Switch,BrowserRouter as Router,Route} from 'react-router-dom'
