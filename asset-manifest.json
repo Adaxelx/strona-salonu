@@ -1,15 +1,15 @@
 {
-  "main.css": "/strona-salonu/static/css/main.98f64223.chunk.css",
-  "main.js": "/strona-salonu/static/js/main.ff5b3425.chunk.js",
-  "main.js.map": "/strona-salonu/static/js/main.ff5b3425.chunk.js.map",
+  "main.css": "/strona-salonu/static/css/main.8fe3219c.chunk.css",
+  "main.js": "/strona-salonu/static/js/main.dddd5886.chunk.js",
+  "main.js.map": "/strona-salonu/static/js/main.dddd5886.chunk.js.map",
   "runtime~main.js": "/strona-salonu/static/js/runtime~main.a5c54488.js",
   "runtime~main.js.map": "/strona-salonu/static/js/runtime~main.a5c54488.js.map",
-  "static/js/2.8185c49b.chunk.js": "/strona-salonu/static/js/2.8185c49b.chunk.js",
-  "static/js/2.8185c49b.chunk.js.map": "/strona-salonu/static/js/2.8185c49b.chunk.js.map",
+  "static/js/2.0a5d4fc0.chunk.js": "/strona-salonu/static/js/2.0a5d4fc0.chunk.js",
+  "static/js/2.0a5d4fc0.chunk.js.map": "/strona-salonu/static/js/2.0a5d4fc0.chunk.js.map",
   "index.html": "/strona-salonu/index.html",
-  "precache-manifest.65d6cc8a9bf07a4f7cf6cd102f3dc81c.js": "/strona-salonu/precache-manifest.65d6cc8a9bf07a4f7cf6cd102f3dc81c.js",
+  "precache-manifest.1e3ed882aee288fc1316bb1166b6ea49.js": "/strona-salonu/precache-manifest.1e3ed882aee288fc1316bb1166b6ea49.js",
   "service-worker.js": "/strona-salonu/service-worker.js",
-  "static/css/main.98f64223.chunk.css.map": "/strona-salonu/static/css/main.98f64223.chunk.css.map",
+  "static/css/main.8fe3219c.chunk.css.map": "/strona-salonu/static/css/main.8fe3219c.chunk.css.map",
   "static/media/glynt.png": "/strona-salonu/static/media/glynt.f7cf2132.png",
   "static/media/salon.png": "/strona-salonu/static/media/salon.6db37e50.png"
 }
