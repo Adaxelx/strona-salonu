@@ -35,7 +35,6 @@ class Footer extends React.Component{
     }
 
     componentWillUnmount(){
-        console.log('xD')
         window.removeEventListener('scroll', this.handleScroll)
     }
 
