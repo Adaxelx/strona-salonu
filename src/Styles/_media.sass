@@ -6,3 +6,11 @@
         margin-top: $space-componentsLand
         & img
             width: 80%
+    footer
+        margin-top: $space-componentsLand
+        +flexRow()
+        & section:nth-of-type(2),& section:nth-of-type(3)
+            width: 45%
+            margin-bottom: $space-componentsLand
+        & .title.place
+            transition-delay: .2s

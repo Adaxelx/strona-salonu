@@ -65,7 +65,7 @@ class Footer extends React.Component{
                 </ul>
             </section>
             <section className='place'>
-                <h3 ref={title3} className='title'><span className='firstLetter'>J</span>ak dojechać?</h3>
+                <h3 ref={title3} className='title place'><span className='firstLetter'>J</span>ak dojechać?</h3>
                 <iframe jsx-ally='map' title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.8326413037253!2d23.143715015789184!3d52.02814647972414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472190d84182a933%3A0xceda46e5f60ef5a8!2sPracownia+Fryzjerska+Beata+Patejuk!5e0!3m2!1spl!2spl!4v1556474525223!5m2!1spl!2spl"
                 allowFullScreen></iframe>
             </section>
