@@ -1,5 +1,4 @@
 .partnership
-    height: 50vh
     width: 100%
     margin-top: $space-components
     +flexAlignCenter()
@@ -14,9 +13,11 @@
         transform: translateX(50%)
         opacity: 0
         transition: .5s
+        margin: 30px 0 30px 0
         &.active
             opacity: 1
             transform: translateX(0)
     & p
         font-size: $font-sizeMedium
         width: 95%
+        text-align: center
