@@ -1,4 +1,4 @@
-@media (orientation:landscape)
+@media (orientation: landscape)
     .home img
         height: 100vh
         width: auto
@@ -14,3 +14,17 @@
             margin-bottom: $space-componentsLand
         & .title.place
             transition-delay: .2s
+
+@media (orientation: portrait) and (min-width: 768px)
+    html
+        font-size: 15px
+    .btn
+        width: 40px
+    .offer
+        height: 1220px
+
+@media (orientation: portrait) and (min-width: 1024px)
+    html
+        font-size: 20px
+    .offer
+        height: 1270px
