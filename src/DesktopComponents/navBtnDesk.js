@@ -4,7 +4,7 @@ class Nav extends React.Component {
     state = {  }
     render() {
         return (
-            <nav></nav>
+            <nav className='deskNav'></nav>
          );
     }
 }
