@@ -1,6 +1,7 @@
 import React from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import NavM from './MobileComponents/Nav/NavM.js'
+import Nav from './DesktopComponents/navBtnDesk.js'
 // import Logo from './MobileComponents/Logo.js'
 import Start from './MobileComponents/StartPage.js'
 
@@ -37,13 +38,13 @@ import {Switch,BrowserRouter as Router,Route} from 'react-router-dom'
 
 
 class App extends React.Component{
-
+  windowWidth = window.innerWidth
   render() {
     return (
       // <section className='container'>
         <Router basename={process.env.PUBLIC_URL}>
         {/* <Logo/> */}
-         <NavM/>
+        {this.windowWidth >= 1024 ? <Nav/> : <NavM/>}
           <Route render={({ location }) => (
           <>
             {/* <Route exact path="/" render={() => (
