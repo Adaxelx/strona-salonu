@@ -44,7 +44,7 @@ class App extends React.Component{
       // <section className='container'>
         <Router basename={process.env.PUBLIC_URL}>
         {/* <Logo/> */}
-        {this.windowWidth >= 1024 ? <Nav/> : <NavM/>}
+        {this.windowWidth >= 1280 ? <Nav/> : <NavM/>}
           <Route render={({ location }) => (
           <>
             {/* <Route exact path="/" render={() => (

@@ -19,14 +19,15 @@ class Partnership extends React.Component {
         }
 
         /* desktop on scroll */
-
-        const containerOff = container.current.offsetTop
-        const containerH = container.current.offsetHeight;
-        const value = containerH + containerOff;
-        if(containerOff-50<scrollV && containerOff+2000-containerH>scrollV){
-            console.log(scrollV-window.innerHeight)
-            container.current.style.transform = `translateY(${scrollV-window.innerHeight+50}px)`
+        if(window.innerWidth >= 1280){
+            const containerOff = container.current.offsetTop
+            const containerH = container.current.offsetHeight;
+            const value = containerH + containerOff;
+            if(containerOff-50<scrollV && containerOff+2000-containerH>scrollV){
+                container.current.style.transform = `translateY(${scrollV-window.innerHeight+50}px)`
+            }
         }
+
     }
 
     item = React.createRef();
