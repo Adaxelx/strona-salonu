@@ -7,20 +7,30 @@ class Partnership extends React.Component {
     state = {  }
 
     handleScroll = ()=>{
-        const {item} = this
+        /* wysunięcie loga */
+
+        const {item,container} = this
         const scrollV = window.scrollY
 
+        if(scrollV > item.current.offsetTop - window.innerHeight +             item.current.offsetHeight/2){
+            item.current.classList.add('active')
+        }else{
+            item.current.classList.remove('active')
+        }
 
+        /* desktop on scroll */
 
-
-            if(scrollV > item.current.offsetTop - window.innerHeight + item.current.offsetHeight/2){
-                item.current.classList.add('active')
-            }else{
-                item.current.classList.remove('active')
-            }
+        const containerOff = container.current.offsetTop
+        const containerH = container.current.offsetHeight;
+        const value = containerH + containerOff;
+        if(containerOff-50<scrollV && containerOff+2000-containerH>scrollV){
+            console.log(scrollV-window.innerHeight)
+            container.current.style.transform = `translateY(${scrollV-window.innerHeight+50}px)`
+        }
     }
 
     item = React.createRef();
+    container = React.createRef();
 
     componentDidMount(){
         window.addEventListener('scroll',this.handleScroll)
@@ -31,7 +41,7 @@ class Partnership extends React.Component {
 
     render() {
         return (
-            <section className='partnership'>
+            <section ref={this.container} className='partnership'>
                 <h2>Pracujemy na najlepszej jakości kosmetykach marki <span><span className='firstLetter'>G</span>lynt</span></h2>
                 <img ref={this.item} src={logo} alt=""/>
                 <p>Kosmetyki firmy <span>Glynt</span> są w 100% oparte na wegańskich składnikach!</p>
