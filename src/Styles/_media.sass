@@ -29,9 +29,19 @@
         height: 85vh
         width: auto
     .offer
-        & .pricelist
-            & .service
-                grid-template-rows: repeat(28,50px)
+        width: 50%
+        height: 2060px
+    .offer .priceList .service
+        grid-template-rows: repeat(28,70px)
+    .offer .priceList .price
+        grid-template-rows: repeat(28,70px)
+    .partnership
+        margin-top: 0
+        width: 50%
+    .startPage
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
 
 @media (orientation: portrait) and (min-width: 768px)
     html
