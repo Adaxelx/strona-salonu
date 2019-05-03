@@ -23,7 +23,7 @@ class Partnership extends React.Component {
             const containerOff = container.current.offsetTop
             const containerH = container.current.offsetHeight;
             const value = containerH + containerOff;
-            if(containerOff-50<scrollV && containerOff+2000-containerH>scrollV){
+            if(containerOff-50<scrollV && containerOff+2020-containerH>scrollV){
                 container.current.style.transform = `translateY(${scrollV-window.innerHeight+50}px)`
             }
         }
