@@ -4,7 +4,8 @@ import NavM from './MobileComponents/Nav/NavM.js'
 import Nav from './DesktopComponents/navBtnDesk.js'
 // import Logo from './MobileComponents/Logo.js'
 import Start from './MobileComponents/StartPage.js'
-
+import AboutMe from './MobileComponents/AboutMe.js'
+import Visit from './MobileComponents/Visit.js'
 import {Switch,BrowserRouter as Router,Route} from 'react-router-dom'
 
 // class App extends Component {
@@ -58,7 +59,8 @@ class App extends React.Component{
                 >
             <Switch location={location}>
                 <Route path="/" exact component={Start} />
-                <Route path="/offer" exact component={Start} />
+                <Route path="/about" exact component={AboutMe} />
+                <Route path="/visit" exact component={Visit} />
             </Switch>
             </CSSTransition>
             </TransitionGroup>
