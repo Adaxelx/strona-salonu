@@ -4,8 +4,8 @@ import NavM from './MobileComponents/Nav/NavM.js'
 import Nav from './DesktopComponents/navBtnDesk.js'
 // import Logo from './MobileComponents/Logo.js'
 import Start from './MobileComponents/StartPage.js'
-import AboutMe from './MobileComponents/AboutMe.js'
-import Visit from './MobileComponents/Visit.js'
+import AboutMe from './MobileComponents/AboutPage.js'
+import Visit from './MobileComponents/VisitPage.js'
 import {Switch,BrowserRouter as Router,Route} from 'react-router-dom'
 
 // class App extends Component {
