@@ -1,6 +1,16 @@
 .aboutPage
     height: 100vh
     width: 100%
-    +flexColumnAround()
+    +flexAlignCenter()
+    justify-content: flex-start
     .title
+        margin-top: $space-content
         font-size: $font-sizeTitle
+        text-align: center
+    .intro
+        font-size: $font-sizeContent
+        width: 80%
+        margin-top: $space-content
+    .subtitle
+        margin-top: $space-content
+        font-size: $font-sizeSubtitle
