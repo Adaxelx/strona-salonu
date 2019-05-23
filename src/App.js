@@ -59,7 +59,7 @@ class App extends React.Component{
                 >
             <Switch location={location}>
                 <Route path="/" exact component={Start} />
-                <Route path="/about" exact component={AboutMe} />
+                <Route path="/partnership" exact component={AboutMe} />
                 <Route path="/visit" exact component={Visit} />
             </Switch>
             </CSSTransition>
