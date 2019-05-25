@@ -53,7 +53,7 @@ class Footer extends React.Component{
                 </section>
             </section>
             <section className='hours'>
-                <h3 ref={title2} className='title'><span className='firstLetter'>G</span>odziny otwarcia</h3>
+                <h3 ref={title2} className='title'><span className='firstLetter'>G</span>odziny pracy</h3>
                 <ul>
                     <li><span>Poniedziałek:</span> 09:00-17:00</li>
                     <li><span>Wtorek:</span> 09:00-17:00</li>
