@@ -32,8 +32,8 @@ class Nav extends React.Component {
             <nav ref={this.nav} className='deskNav'>
             <ul>
                <NavLink exact to='/'><li>Start</li></NavLink>
-               <NavLink exact to='/offer'><li>O mnie</li></NavLink>
-                <NavLink exact to='/contact'><li>Umów się!</li></NavLink>
+               <NavLink exact to='/contact'><li>Umów się!</li></NavLink>
+                <NavLink exact to='/gallery'><li>Galeria</li></NavLink>
             </ul>
             <p>tel. 503 432 435</p>
             </nav>
