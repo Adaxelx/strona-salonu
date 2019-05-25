@@ -13,7 +13,7 @@ class Gallery extends React.Component {
     render() {
         return (
             <article className="gallery">
-                <h2 className="title"><span className='firstLetter'>P</span>rzykładowe prace</h2>
+                <h2 className="titleGal"><span className='firstLetter'>P</span>rzykładowe prace</h2>
                 <Images showImg={this.showImg}/>
                 <Footer/>
             </article>

@@ -30,9 +30,6 @@ class Images extends React.Component{
             if(scrollV > ref.current.offsetTop - window.innerHeight + ref.current.offsetHeight/2){
                 ref.current.classList.add('active')
             }
-            else{
-                ref.current.classList.remove('active')
-            }
         })
     }
 
