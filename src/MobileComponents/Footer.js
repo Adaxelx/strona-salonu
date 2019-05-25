@@ -31,6 +31,7 @@ class Footer extends React.Component{
 
 
     componentDidMount(){
+        this.handleScroll();
         window.addEventListener('scroll',this.handleScroll)
     }
 
@@ -46,7 +47,7 @@ class Footer extends React.Component{
             <aside ref={aside2} className='media'><i className="fab fa-facebook-f"></i></aside>
             <section className='visit'>
                 <h3 ref={title} className='title'><span className='firstLetter'>U</span>mów wizytę</h3>
-                <p className='content'>Jeśli Twoje włosy wymagają szczególnej opieki, są zniszczone słońcem lub nieudanym zabiegiem kosmetycznym, jeśli wybierasz się na uroczystość, która wymaga pieknej stylizacji lub po prostu chcesz odświeżyć fryzurę - zadzwoń do nas! Postaramy się umówić wizytę w najbardziej dogodnym terminie. Aby umówić wizytę <a href="/start">Kliknij tutaj!</a></p>
+                <p className='content'>Jeśli Twoje włosy wymagają szczególnej opieki, są zniszczone słońcem lub nieudanym zabiegiem kosmetycznym, jeśli wybierasz się na uroczystość, która wymaga pieknej stylizacji lub po prostu chcesz odświeżyć fryzurę - zadzwoń do nas! Postaramy się umówić wizytę w najbardziej dogodnym terminie. Aby umówić wizytę <a href="/contact">Kliknij tutaj!</a></p>
                 <section className='contact'><h3 className="title"><span className='firstLetter'>L</span>ub skontaktuj się poprzez:</h3>
                 <p><i className="fas fa-phone-volume"></i>493 534 623</p>
                 <p><i className="far fa-envelope"></i>beatapatejuk@wp.pl</p>

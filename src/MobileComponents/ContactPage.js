@@ -50,8 +50,8 @@ class ContactPage extends React.Component {
                         <p>Rodzaj usługi i przybliżona data</p>
                         <textarea id="message" name="message" value={this.state.message} onChange={this.handleChange}></textarea>
                     </label>
-                    <button>Send</button>
-                    <p>Data wizyty zostanie podana podczas rozmowy telefonicznej, ewetnualnie wysłana przez SMS lub mail w zależności od preferencji klienta.</p>
+                    <button>Wyślij</button>
+                    <aside>Data wizyty zostanie podana podczas rozmowy telefonicznej, ewetnualnie wysłana przez SMS lub mail w zależności od preferencji klienta.</aside>
                 </form>
                 </section>
                 <Footer/>
