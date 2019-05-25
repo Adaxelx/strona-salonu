@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d918c742ef3fbbaeb926",
-    "url": "/strona-salonu/static/css/main.00babed8.chunk.css"
+    "revision": "d6e5130a72050bf57eed",
+    "url": "/strona-salonu/static/css/main.bc9a8eac.chunk.css"
   },
   {
-    "revision": "d918c742ef3fbbaeb926",
-    "url": "/strona-salonu/static/js/main.c32d14e2.chunk.js"
+    "revision": "d6e5130a72050bf57eed",
+    "url": "/strona-salonu/static/js/main.10a5550d.chunk.js"
   },
   {
     "revision": "9c7c04716640c5eab7f1",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/strona-salonu/static/media/15.18076478.jpg"
   },
   {
-    "revision": "21806a76ff23594f4bdb79281bcc9e33",
+    "revision": "c4fa3e40647da6e77ff9a258339045c7",
     "url": "/strona-salonu/index.html"
   }
 ];
