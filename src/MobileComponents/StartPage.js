@@ -18,12 +18,12 @@ class StartPage extends React.Component {
 
     render() {
         return (
-            <section className='startPage'>
+            <article className='startPage'>
                 <Home/>
                 <Offer/>
                 <Partnership/>
                 <Footer/>
-            </section>
+            </article>
          );
     }
 }
