@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/strona-salonu/static/media/6.54e847d5.jpg"
   },
   {
-    "revision": "c6c33a6122e49f4f4a0f",
-    "url": "/strona-salonu/static/css/main.e88ec40e.chunk.css"
+    "revision": "89ee0e89180692c38d07",
+    "url": "/strona-salonu/static/css/main.d9704d35.chunk.css"
   },
   {
     "revision": "9c7c04716640c5eab7f1",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/strona-salonu/static/media/5.9e428b98.jpg"
   },
   {
-    "revision": "c6c33a6122e49f4f4a0f",
-    "url": "/strona-salonu/static/js/main.c5ff7c69.chunk.js"
+    "revision": "89ee0e89180692c38d07",
+    "url": "/strona-salonu/static/js/main.73c398e3.chunk.js"
   },
   {
     "revision": "c471541317e91119534422e524d27ba9",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/strona-salonu/static/media/15.18076478.jpg"
   },
   {
-    "revision": "52e87a15535196b2dd86bb36f8f664c2",
+    "revision": "c26567449a3326b1d594120a9548ce2c",
     "url": "/strona-salonu/index.html"
   }
 ];
