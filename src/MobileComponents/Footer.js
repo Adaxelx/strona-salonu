@@ -29,9 +29,13 @@ class Footer extends React.Component{
     title2 = React.createRef()
     title3 = React.createRef()
 
+    scrollTop = () => {
+        window.scrollTo(0, 0)
+    }
 
     componentDidMount(){
         this.handleScroll();
+        setTimeout(this.scrollTop, 500);
         window.addEventListener('scroll',this.handleScroll)
     }
 
@@ -43,8 +47,8 @@ class Footer extends React.Component{
         const {footer, aside, aside2, title,title2,title3} = this
     return (
         <footer ref={footer}>
-            <aside  ref={aside} className='media'><i className="fab fa-instagram"></i></aside>
-            <aside ref={aside2} className='media'><i className="fab fa-facebook-f"></i></aside>
+            <a href="https://www.instagram.com/pracowniafryzjerska.beatapatej/" target="_blank" rel="noopener noreferrer" ref={aside} className='media'><i className="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/pracowniafryzjerskabeatapatejuk/" target="_blank" rel="noopener noreferrer" ref={aside2} className='media'><i className="fab fa-facebook-f"></i></a>
             <section className='visit'>
                 <h3 ref={title} className='title'><span className='firstLetter'>U</span>mów wizytę</h3>
                 <p className='content'>Jeśli Twoje włosy wymagają szczególnej opieki, są zniszczone słońcem lub nieudanym zabiegiem kosmetycznym, jeśli wybierasz się na uroczystość, która wymaga pieknej stylizacji lub po prostu chcesz odświeżyć fryzurę - zadzwoń do nas! Postaramy się umówić wizytę w najbardziej dogodnym terminie. Aby umówić wizytę <NavLink to="/contact">Kliknij tutaj!</NavLink></p>

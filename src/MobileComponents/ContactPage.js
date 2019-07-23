@@ -27,6 +27,7 @@ class ContactPage extends React.Component {
 
     render() {
         return (
+            <>
             <article className='contactPage'>
                 <section className='contactSection'>
                 <h2 className="title"><span className='firstLetter'>U</span>mów się!</h2>
@@ -35,9 +36,11 @@ class ContactPage extends React.Component {
                     <p className='telephoneNumer'><i className="fas fa-mobile-alt"></i> 666 000 333</p>
                     <aside><span>Ważne!</span> Proszę dzwonić tylko w godzinach pracy (podane w sekcji poniżej).</aside>
                 </section>
-                 </section>
+                </section>
                 <Footer/>
             </article>
+            </>
+            
          );
     }
 }
