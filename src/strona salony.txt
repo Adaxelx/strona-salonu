@@ -1,0 +1,4 @@
+- Wspó³praca, zak³adka z og³oszeniem pracy
+- umawianie siê(formularz + kalendarz)
+- kontakt ( formularz + telefon + mail)
+- o mnie (kilka s³ów + zdjêcie + ukoñczone kursy)

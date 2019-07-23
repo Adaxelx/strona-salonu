@@ -27,7 +27,6 @@ class ContactPage extends React.Component {
 
     render() {
         return (
-            <>
             <article className='contactPage'>
                 <section className='contactSection'>
                 <h2 className="title"><span className='firstLetter'>U</span>mów się!</h2>
@@ -36,27 +35,9 @@ class ContactPage extends React.Component {
                     <p className='telephoneNumer'><i className="fas fa-mobile-alt"></i> 666 000 333</p>
                     <aside><span>Ważne!</span> Proszę dzwonić tylko w godzinach pracy (podane w sekcji poniżej).</aside>
                 </section>
-                <form action="">
-                    <h3 className='subtitle'>Lub za pomocą formularza:</h3>
-                    <label className='name' htmlFor="user">
-                        <p>Imię i Nazwisko</p>
-                        <input placeholder='Imię i nazwisko' type="text" id="user" name="username" value={this.state.username} onChange={this.handleChange}></input>
-                    </label>
-                    <label className='number' htmlFor="phone-number">
-                        <p>Numer telefonu</p>
-                        <input placeholder='Numer telefonu' type="number" id="number" name="number" value={this.state.email} onChange={this.handleChange}></input>
-                    </label>
-                    <label className='message' htmlFor="message">
-                        <p>Rodzaj usługi i przybliżona data</p>
-                        <textarea id="message" name="message" value={this.state.message} onChange={this.handleChange}></textarea>
-                    </label>
-                    <button>Wyślij</button>
-                    <aside>Data wizyty zostanie podana podczas rozmowy telefonicznej, ewetnualnie wysłana przez SMS lub mail w zależności od preferencji klienta.</aside>
-                </form>
-                </section>
+                 </section>
                 <Footer/>
             </article>
-            </>
          );
     }
 }
