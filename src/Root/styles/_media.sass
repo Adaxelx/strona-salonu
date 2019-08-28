@@ -1,0 +1,84 @@
+@media (orientation: landscape)
+    .home img
+        height: 95vh
+        width: auto
+    .partnership
+        margin-top: $space-componentsLand
+        & img
+            width: 80%
+    footer
+        margin-top: $space-componentsLand
+        +flexRow()
+        & section:nth-of-type(2),& section:nth-of-type(3)
+            width: 45%
+            margin-bottom: $space-componentsLand
+        & .title.place
+            transition-delay: .2s
+        .hours
+            height: 50vh
+    .gallery
+        .images
+            img
+                width: 30%
+@media (orientation: landscape) and (min-width: 640px)
+    html
+        font-size: 12px
+@media (orientation: landscape) and (min-width: 768px)
+    html
+        font-size: 14px
+@media (orientation: landscape) and (min-width: 1024px)
+    .priceList
+        flex-direction: column
+        align-items: center
+    .priceList__service
+        width: 80%
+@media (orientation: landscape) and (min-width: 1280px)
+    html
+        font-size: 19px
+    .home img
+        height: 85vh
+        width: auto
+    .offer
+        width: 50%
+        height: 2230px
+    .priceList__service
+        width: 100%
+        grid-template-rows: repeat(29,70px)
+    .partnership
+        margin-top: 0
+        width: 50%
+    .startPage
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+    .contactPage
+        .contactSection .title
+            width: 100%
+            text-align: center
+        .contactSection
+            +flexRow()
+            .contactTypes
+                width: 40%
+            form
+                width: 40%
+
+
+
+@media (orientation: portrait) and (min-width: 768px)
+    html
+        font-size: 15px
+    .btn
+        width: 40px
+    .offer
+        height: 1220px
+    .priceList
+        flex-direction: column
+        align-items: center
+    .priceList__service
+        width: 80%
+
+@media (orientation: portrait) and (min-width: 1024px)
+    html
+        font-size: 20px
+    .offer
+        height: 1270px

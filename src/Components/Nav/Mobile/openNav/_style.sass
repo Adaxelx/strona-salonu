@@ -1,0 +1,49 @@
+.openedNav
+    position: fixed
+    width: 100%
+    height: 100vh
+    top: 0
+    left: 0
+    transform: translateY(-100%)
+    background-color: rgba(222,222,222,0.8)
+    transition: .5s
+    z-index: 2
+    +flexAlignCenter()
+    &.active
+        transform: translateY(0%)
+.navList
+    font-size: $font-sizeBig
+    font-weight: bold
+    list-style-type: none
+    +flexColumnAround()
+    height: 50vh
+    width: 80%
+.navList__link
+    width: 100%
+    display: flex
+    justify-content: space-between
+    position: relative
+    overflow: hidden
+    color: black
+    text-decoration: none
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 1px
+        background-color: black
+        bottom: 12px
+    & span:nth-of-type(even)
+        transform: translateX(100%)
+    & span:nth-of-type(odd)
+        transform: translateX(-100%)
+    &:nth-of-type(odd) span:nth-of-type(even)
+        transition: .5s .9s
+    &:nth-of-type(even) span:nth-of-type(even)
+        transition: .5s .5s
+    &:nth-of-type(odd) span:nth-of-type(odd)
+        transition: .5s .5s
+    &:nth-of-type(even) span:nth-of-type(odd)
+        transition: .5s .9s
+.navList__link span
+        transform: translate(0)

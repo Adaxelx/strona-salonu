@@ -1,0 +1,86 @@
+.fade-enter
+  transform: translateX(-40%)
+  opacity: 0
+  z-index: 1
+
+
+.fade-enter.fade-enter-active
+  transform: translateX(0)
+  opacity: 1
+  transition: .5s .7s linear
+
+.fade-exit
+  transform: translateX(0)
+  opacity: 1
+  z-index: 1
+
+
+.fade-exit.fade-exit-active
+  transform: translateX(40%)
+  opacity: 0
+  transition: .5s linear
+
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 10px
+  font-family: sans-serif
+  overflow-x: hidden
+
+
+
+.firstLetter
+  color: #5f88c1
+
+/* scroll style */
+
+::-webkit-scrollbar
+  width: 10px
+
+::-webkit-scrollbar-track
+  background: #f1f1f1
+
+::-webkit-scrollbar-thumb
+  background: #888
+  border-radius: 10px
+
+::-webkit-scrollbar-thumb:hover
+  background: #555
+
+
+
+/* mixins + vars */
+
+@import 'Root/styles/_variables.sass'
+@import 'Root/styles/_mixins.sass'
+
+/* nav / footer */
+
+@import 'Components/Nav/Mobile/btnNav/_style.sass'
+@import 'Components/Nav/Mobile/openNav/_style.sass'
+@import 'Components/Footer/_style.sass'
+
+/* nav desktop */
+
+@import 'Components/Nav/Deskt/_style.sass'
+
+/* start page */
+
+@import 'Views/StartPage/Partnership/_style.sass'
+@import 'Views/StartPage/Home/_style.sass'
+@import 'Views/StartPage/Offer/_style.sass'
+@import 'Views/StartPage/_style.sass'
+
+/* galery page */
+
+@import 'Views/GalleryPage/_style.sass'
+
+/* media */
+
+@import 'Root/styles/_media.sass'
+
+

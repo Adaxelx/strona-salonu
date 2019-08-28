@@ -1,0 +1,36 @@
+.offer
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 1260px
+    // margin-top: 5vh
+.offer__title
+    text-transform: uppercase
+    font-size: $font-sizeTitle
+    transform: translateX(50%)
+    opacity: 0
+    transition: 1s
+.offer__subtitle
+    text-align: justify
+    margin: $space-content 2.5% $space-componentsLand 2.5%
+.offer__title--active
+        opacity: 1
+        transform: translateY(0)
+.priceList
+    width: $width-section
+    display: flex
+.priceList__service
+    width: 100%
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: repeat(29,40px)
+.priceList__service p
+    padding-left: 20px
+    font-size: $font-sizeContent
+    display: flex
+    align-items: center
+.priceList__service p:nth-of-type(odd)
+    background-color: lightgray
+.offer__subtitle
+    font-size: $font-sizeSubtitle
