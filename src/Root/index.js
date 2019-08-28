@@ -8,7 +8,6 @@ import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends React.Component {
   windowWidth = window.innerWidth;
-
   state = {
     active: false
   };

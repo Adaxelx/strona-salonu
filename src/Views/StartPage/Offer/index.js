@@ -33,7 +33,7 @@ class Offer extends React.Component {
           <span className="firstLetter">N</span>asza oferta
         </h1>
         <h2 className="offer__subtitle">
-          O ceny mozna dopytać się podczas rozmowy telefonicznej
+          O ceny można dopytać się podczas rozmowy telefonicznej
         </h2>
         <section className="priceList">
           <div className="priceList__service">

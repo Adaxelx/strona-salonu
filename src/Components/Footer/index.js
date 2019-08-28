@@ -71,12 +71,10 @@ class Footer extends React.Component {
             <span className="firstLetter">U</span>mów wizytę
           </h3>
           <p className="content">
-            Jeśli Twoje włosy wymagają szczególnej opieki, są zniszczone słońcem
-            lub nieudanym zabiegiem kosmetycznym, jeśli wybierasz się na
-            uroczystość, która wymaga pieknej stylizacji lub po prostu chcesz
-            odświeżyć fryzurę - zadzwoń do nas! Postaramy się umówić wizytę w
-            najbardziej dogodnym terminie. Aby umówić wizytę{" "}
-            <NavLink to="/contact">Kliknij tutaj!</NavLink>
+            Jeżeli twoje włosy potrzebują odświeżenia, są po nieudanym zabiegu
+            kosmetycznym, bądź poprostu chcesz mieć fryzurę taką jaką tylko
+            chcesz umów się na wizytę w naszym salonie! Gwarantujemy, że twoje
+            włosy po wizycie u nas będą w swojej najlepszej kondycji i formie.
           </p>
           <section className="contact">
             <h3 className="title">

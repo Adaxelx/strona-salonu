@@ -1,0 +1,35 @@
+.contact
+    width: 100%
+    overflow: hidden
+    margin-top: $space-components
+    .contactSection
+        width: 100%
+        +flexColumnAround()
+        justify-content: flex-start
+        .subtitle
+            font-size: $font-sizeSubtitle
+            margin-top: $space-content
+            text-align: center
+        .title
+            font-size: $font-sizeTitle
+            transform: translateX(50%)
+            transition: .5s
+            opacity: 0
+            &.active
+                opacity: 1
+                transform: translateX(0)
+        .contactTypes
+            width: $width-section
+            .telephoneNumer
+                font-size: $font-sizeMedium
+                margin: $space-inner 0 $space-inner 0
+                text-align: center
+                i
+                    margin-right: $space-inner
+            aside
+                text-align: center
+                font-size: $font-sizeContent
+                span
+                    text-transform: uppercase
+                    font-size: $font-sizeMedium
+                    color: red
