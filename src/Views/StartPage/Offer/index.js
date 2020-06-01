@@ -11,8 +11,6 @@ class Offer extends React.Component {
         window.innerHeight
     ) {
       this.title.current.classList.add("offer__title--active");
-    } else {
-      this.title.current.classList.remove("offer__title--active");
     }
   };
 

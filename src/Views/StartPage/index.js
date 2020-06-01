@@ -3,7 +3,7 @@ import Home from "Views/StartPage/Home";
 import Offer from "Views/StartPage/Offer";
 import Footer from "Components/Footer";
 import "Root/MainStyle.sass";
-import Partnership from "Views/StartPage/Partnership";
+// import Partnership from "Views/StartPage/Partnership";
 import Contact from "Views/StartPage/Contact";
 
 class StartPage extends React.Component {
@@ -18,12 +18,13 @@ class StartPage extends React.Component {
       const containerH = container.current.offsetHeight;
       const value = containerH + containerOff;
       if (
-        containerOff - 60 < scrollV &&
-        containerOff + 2190 - containerH > scrollV
+        containerOff - window.innerHeight / 2 + containerH / 2 < scrollV &&
+        containerOff - window.innerHeight / 2 + containerH + 2130 - containerH >
+          scrollV
       ) {
         container.current.style.transform = `translateY(${scrollV -
-          window.innerHeight +
-          50}px)`;
+          window.innerHeight / 2 -
+          containerH / 2}px)`;
       }
     }
   };
@@ -47,7 +48,7 @@ class StartPage extends React.Component {
         <Offer />
         <section className="container" ref={this.container}>
           <Contact />
-          <Partnership />
+          {/* <Partnership /> */}
         </section>
         <Footer />
       </article>

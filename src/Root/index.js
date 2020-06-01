@@ -38,7 +38,11 @@ class App extends React.Component {
                 >
                   <Switch location={location}>
                     <Route path="/" exact component={Start} />
-                    <Route path="/gallery" exact component={GalleryPage} />
+                    <Route
+                      path={`${process.env.PUBLIC_URL}/gallery`}
+                      exact
+                      component={GalleryPage}
+                    />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

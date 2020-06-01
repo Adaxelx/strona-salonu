@@ -11,7 +11,7 @@ class Footer extends React.Component {
 
     refs = [aside, aside2, title, title2, title3];
 
-    refs.forEach(ref => {
+    refs.forEach((ref) => {
       if (
         scrollV - footer.current.offsetTop >
         ref.current.offsetTop - window.innerHeight + ref.current.offsetHeight
@@ -70,18 +70,9 @@ class Footer extends React.Component {
           <h3 ref={title} className="title">
             <span className="firstLetter">U</span>mów wizytę
           </h3>
-          <p className="content">
-            Jeżeli twoje włosy potrzebują odświeżenia, są po nieudanym zabiegu
-            kosmetycznym, bądź poprostu chcesz mieć fryzurę taką jaką tylko
-            chcesz umów się na wizytę w naszym salonie! Gwarantujemy, że twoje
-            włosy po wizycie u nas będą w swojej najlepszej kondycji i formie.
-          </p>
           <section className="contact">
-            <h3 className="title">
-              <span className="firstLetter">L</span>ub skontaktuj się poprzez:
-            </h3>
             <p>
-              <i className="fas fa-phone-volume"></i>493 534 623
+              <i className="fas fa-phone-volume"></i>504 816 077
             </p>
           </section>
         </section>
@@ -94,13 +85,13 @@ class Footer extends React.Component {
               <span>Poniedziałek:</span> 09:00-17:00
             </li>
             <li>
-              <span>Wtorek:</span> 09:00-17:00
+              <span>Wtorek:</span> 09:00-19:00
             </li>
             <li>
-              <span>Środa:</span> Nieczynne
+              <span>Środa:</span> 09:00-17:00
             </li>
             <li>
-              <span>Czwartek:</span> 10:00-18:00
+              <span>Czwartek:</span> 9:00-19:00
             </li>
             <li>
               <span>Piątek:</span> 10:00-18:00

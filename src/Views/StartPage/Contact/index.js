@@ -5,8 +5,6 @@ class Contact extends React.Component {
   handleScroll = () => {
     /* wysunięcie loga */
 
-    const { title, container } = this;
-
     const scrollV = window.scrollY;
     if (
       scrollV >
@@ -39,7 +37,7 @@ class Contact extends React.Component {
             <section className="contactTypes">
               <h3 className="subtitle">Możesz to zrobić poprzez:</h3>
               <p className="telephoneNumer">
-                <i className="fas fa-mobile-alt"></i> 666 000 333
+                <i className="fas fa-mobile-alt"></i> 504 816 077
               </p>
               <aside>
                 <span>Ważne!</span> Proszę dzwonić tylko w godzinach pracy

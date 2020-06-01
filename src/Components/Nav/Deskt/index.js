@@ -38,7 +38,7 @@ class Nav extends React.Component {
             <li>Galeria</li>
           </NavLink>
         </ul>
-        <p>tel. 503 432 435</p>
+        <p>tel. 504 816 077</p>
       </nav>
     );
   }

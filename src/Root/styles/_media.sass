@@ -23,9 +23,13 @@
 @media (orientation: landscape) and (min-width: 640px)
     html
         font-size: 12px
+    .offer
+        height: 1280px
 @media (orientation: landscape) and (min-width: 768px)
     html
         font-size: 14px
+    .offer
+        height: 1320px
 @media (orientation: landscape) and (min-width: 1024px)
     .priceList
         flex-direction: column
@@ -40,10 +44,6 @@
         width: auto
     .container
         width: 50%
-        height: calc(100vh - 60px)
-        display: flex
-        flex-direction: column
-        justify-content: space-between
     .offer
         width: 50%
         height: 2230px
@@ -52,7 +52,6 @@
         grid-template-rows: repeat(29,70px)
     .contact
         margin-top: 0
-    .partnership
     .startPage
         display: flex
         flex-wrap: wrap
@@ -68,15 +67,13 @@
             form
                 width: 40%
 
-
-
 @media (orientation: portrait) and (min-width: 768px)
     html
         font-size: 15px
     .btn
         width: 40px
     .offer
-        height: 1220px
+        height: 1320px
     .priceList
         flex-direction: column
         align-items: center
@@ -87,4 +84,6 @@
     html
         font-size: 20px
     .offer
-        height: 1270px
+        height: 1670px
+    .priceList__service
+        grid-template-rows: repeat(29,50px)
