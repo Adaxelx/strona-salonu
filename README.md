@@ -1,6 +1,6 @@
 # Strona-salonu
 
-My first page for client. It's hair salon website made for friend of mine. It's in use since 2019. 
+My first page fully designed and created by me for client. It's hair salon website made for friend of mine. It's in use since 2019. 
 
 # Motivation
 
