@@ -1,36 +1,47 @@
 @media (orientation: landscape)
+
+    // .footer__wrapper
+    //     display: flex
+    //     justify-content: space-between
+    //     align-items: flex-start
+    //     width: 100%
+    //     position: relative
+    //     margin-top: 15px
+    //     flex-grow: 1
+
+    .gallery__image
+        width: 30%
+
+    .visit
+        width: 100%
     .home img
         height: 95vh
         width: auto
-    .partnership
-        margin-top: $space-componentsLand
-        & img
-            width: 80%
-    footer
-        margin-top: $space-componentsLand
-        +flexRow()
-        & section:nth-of-type(2),& section:nth-of-type(3)
-            width: 45%
-            margin-bottom: $space-componentsLand
-        & .title.place
-            transition-delay: .2s
-        .hours
-            height: 50vh
-    .gallery
-        .images
-            img
-                width: 30%
+        .partnership
+            margin-top: $space-componentsLand
+            & img
+                width: 80%
+
 @media (orientation: landscape) and (min-width: 640px)
     html
         font-size: 12px
-    .offer
-        height: 1280px
+
 @media (orientation: landscape) and (min-width: 768px)
     html
         font-size: 14px
-    .offer
-        height: 1320px
+
 @media (orientation: landscape) and (min-width: 1024px)
+    .footer
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        margin-top: $space-componentsLand
+
+        & section:nth-of-type(3)
+            width: 45%
+
+            & .title.place
+                transition-delay: .2s
     .priceList
         flex-direction: column
         align-items: center
@@ -42,14 +53,14 @@
     .home img
         height: 85vh
         width: auto
+
     .container
         width: 50%
     .offer
         width: 50%
-        height: 2230px
     .priceList__service
         width: 100%
-        grid-template-rows: repeat(29,70px)
+        grid-template-rows: repeat(40,70px)
     .contact
         margin-top: 0
     .startPage
@@ -66,14 +77,16 @@
                 width: 40%
             form
                 width: 40%
+    .gallery
+        position: absolute
+        overflow: hidden
+        margin-top: 40px
 
 @media (orientation: portrait) and (min-width: 768px)
     html
         font-size: 15px
     .btn
         width: 40px
-    .offer
-        height: 1320px
     .priceList
         flex-direction: column
         align-items: center
@@ -83,7 +96,5 @@
 @media (orientation: portrait) and (min-width: 1024px)
     html
         font-size: 20px
-    .offer
-        height: 1670px
     .priceList__service
-        grid-template-rows: repeat(29,50px)
+        grid-template-rows: repeat(40,50px)

@@ -9,22 +9,23 @@ import Contact from "Views/StartPage/Contact";
 class StartPage extends React.Component {
   state = {};
   container = React.createRef();
+  footer = React.createRef();
 
   handleScroll = () => {
     const scrollV = window.scrollY;
-    const { container } = this;
+    const { container, footer } = this;
     if (window.innerWidth >= 1280) {
       const containerOff = container.current.offsetTop;
       const containerH = container.current.offsetHeight;
-      const value = containerH + containerOff;
+      const footerOff = footer.current.offsetTop;
+
       if (
         containerOff - window.innerHeight / 2 + containerH / 2 < scrollV &&
-        containerOff - window.innerHeight / 2 + containerH + 2130 - containerH >
-          scrollV
+        footerOff - window.innerHeight / 2 - containerH / 2 - 30 > scrollV
       ) {
-        container.current.style.transform = `translateY(${scrollV -
-          window.innerHeight / 2 -
-          containerH / 2}px)`;
+        container.current.style.transform = `translateY(${
+          scrollV - window.innerHeight / 2 - containerH / 2
+        }px)`;
       }
     }
   };
@@ -50,7 +51,7 @@ class StartPage extends React.Component {
           <Contact />
           {/* <Partnership /> */}
         </section>
-        <Footer />
+        <Footer footerRef={this.footer} />
       </article>
     );
   }

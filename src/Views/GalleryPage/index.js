@@ -33,13 +33,19 @@ let imgs = [
   img12,
   img13,
   img14,
-  img15
+  img15,
 ];
 let imgRefs = [];
 
 const Gallery = () => {
   const images = imgs.map((img, i) => (
-    <img ref={imgRefs[i]} src={img} key={img} alt="" />
+    <img
+      ref={imgRefs[i]}
+      className="gallery__image"
+      src={img}
+      key={img}
+      alt=""
+    />
   ));
 
   return (

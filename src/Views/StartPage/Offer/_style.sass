@@ -3,8 +3,7 @@
     display: flex
     flex-direction: column
     align-items: center
-    height: 1280px
-    // margin-top: 5vh
+
 .offer__title
     text-transform: uppercase
     font-size: $font-sizeTitle
@@ -15,8 +14,8 @@
     text-align: justify
     margin: $space-content 2.5% $space-componentsLand 2.5%
 .offer__title--active
-        opacity: 1
-        transform: translateY(0)
+    opacity: 1
+    transform: translateY(0)
 .priceList
     width: $width-section
     display: flex
@@ -24,7 +23,7 @@
     width: 100%
     display: grid
     grid-template-columns: 100%
-    grid-template-rows: repeat(29,40px)
+    grid-template-rows: repeat(40,40px)
 .priceList__service p
     padding-left: 20px
     font-size: $font-sizeContent
@@ -34,3 +33,10 @@
     background-color: lightgray
 .offer__subtitle
     font-size: $font-sizeSubtitle
+.priceList__service .priceList__subtitle
+    justify-content: center
+    padding-left: 0
+.priceList__subtitle
+    background-color: #333 !important
+    color: white
+    text-transform: uppercase

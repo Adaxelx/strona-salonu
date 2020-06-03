@@ -1,19 +1,18 @@
 import React from "react";
 
 import "Root/MainStyle.sass";
-import { NavLink } from "react-router-dom";
 let refs = [];
 
 class Footer extends React.Component {
   handleScroll = () => {
     const { footer, aside, aside2, title, title2, title3 } = this;
+    const { footerRef } = this.props;
     const scrollV = window.scrollY;
-
     refs = [aside, aside2, title, title2, title3];
-
+    const footerReference = footerRef ? footerRef : footer;
     refs.forEach((ref) => {
       if (
-        scrollV - footer.current.offsetTop >
+        scrollV - footerReference.current.offsetTop >
         ref.current.offsetTop - window.innerHeight + ref.current.offsetHeight
       ) {
         ref.current.classList.add("active");
@@ -46,8 +45,9 @@ class Footer extends React.Component {
 
   render() {
     const { footer, aside, aside2, title, title2, title3 } = this;
+    const { footerRef } = this.props;
     return (
-      <footer ref={footer}>
+      <footer className="footer" ref={footerRef ? footerRef : footer}>
         <a
           href="https://www.instagram.com/pracowniafryzjerska.beatapatej/"
           target="_blank"
@@ -66,44 +66,47 @@ class Footer extends React.Component {
         >
           <i className="fab fa-facebook-f"></i>
         </a>
-        <section className="visit">
-          <h3 ref={title} className="title">
-            <span className="firstLetter">U</span>mów wizytę
-          </h3>
-          <section className="contact">
-            <p>
-              <i className="fas fa-phone-volume"></i>504 816 077
-            </p>
+        <div className="footer__wrapper">
+          <section className="visit">
+            <h3 ref={title} className="title">
+              <span className="firstLetter">U</span>mów wizytę
+            </h3>
+            <section className="contact">
+              <p>
+                <i className="fas fa-phone-volume"></i>504 816 077
+              </p>
+            </section>
           </section>
-        </section>
-        <section className="hours">
-          <h3 ref={title2} className="title">
-            <span className="firstLetter">G</span>odziny pracy
-          </h3>
-          <ul>
-            <li>
-              <span>Poniedziałek:</span> 09:00-17:00
-            </li>
-            <li>
-              <span>Wtorek:</span> 09:00-19:00
-            </li>
-            <li>
-              <span>Środa:</span> 09:00-17:00
-            </li>
-            <li>
-              <span>Czwartek:</span> 9:00-19:00
-            </li>
-            <li>
-              <span>Piątek:</span> 10:00-18:00
-            </li>
-            <li>
-              <span>Sobota:</span> 08:00-14:00
-            </li>
-            <li>
-              <span>Niedziela:</span> Nieczynne
-            </li>
-          </ul>
-        </section>
+
+          <section className="hours">
+            <h3 ref={title2} className="title">
+              <span className="firstLetter">G</span>odziny pracy
+            </h3>
+            <ul>
+              <li>
+                <span>Poniedziałek:</span> 09:00-17:00
+              </li>
+              <li>
+                <span>Wtorek:</span> 09:00-19:00
+              </li>
+              <li>
+                <span>Środa:</span> 09:00-17:00
+              </li>
+              <li>
+                <span>Czwartek:</span> 9:00-19:00
+              </li>
+              <li>
+                <span>Piątek:</span> 10:00-18:00
+              </li>
+              <li>
+                <span>Sobota:</span> 08:00-14:00
+              </li>
+              <li>
+                <span>Niedziela:</span> Nieczynne
+              </li>
+            </ul>
+          </section>
+        </div>
         <section className="place">
           <h3 ref={title3} className="title place">
             <span className="firstLetter">J</span>ak dojechać?
